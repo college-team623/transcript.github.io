@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Transcript</title>
+    <style>
+        * {
+            text-transform: capitalize;
+        }
+
+        body {
+            background-color: #EEEEEE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2%;
+        }
+
+        .container {
+            background-color: inherit;
+            padding: 2% 3%;
+            border-radius: 12px;
+            border: 1px solid #CCCCCC;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 2%;
+            font-size: 1.8rem;
+            color: #293f50;
+        }
+
+        table {
+            width: 85%;
+            margin: 4% auto;
+            color: #293f50;
+        }
+
+        table td,
+        table th {
+            text-align: center;
+            padding: 1.5% 3%;    
+            border-radius: 6px;
+            font-size: 1.1rem;
+        }
+
+        table thead tr th:first-child {
+            text-align: left;
+        }
+
+        table td {
+            background-color: #dedede;
+            margin: 1%;
+        }
+
+        table tbody tr td:first-child {
+            text-align: left;
+        }
+
+        table thead tr {
+            background-color: #293f50;
+            color: #EEEEEE;
+        }
+
+        table tbody a {    
+            display: inline-block;
+            text-decoration: none;
+            padding: 1% 15%;
+            border-radius: 10px;
+            color: #EEEEEE;
+            background-color: #489e63;
+        }
+
+        table tbody a:hover {
+            background-color: #56bc77;
+            color: #EEEEEE;
+        }
+
+        .button-container {
+            margin-top: 2%;
+            text-align: center;
+        }
+
+        .button-container button {
+            padding: 1.5% 4%;
+            font-size: 16px;
+            cursor: pointer;
+            color: #293f50;
+            border: 1px solid #293f50;
+        }
+
+        .button-container button:hover {
+            color: #EEEEEE;
+            background-color: #293f50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Transcript</h1>
+
+        <h2>Total GPA: ##</h2>
+        <h2>Grade: ##</h2>
+        <h2>State: ##</h2>
+
+        <h3>General Requirements</h3>
+        <h4>Compulsory Subjects (6 hours)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Hours</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HU 111</td>
+                    <td>English-1</td>
+                    <td>2</td>
+                    <td>85</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>HU 112</td>
+                    <td>English-2</td>
+                    <td>2</td>
+                    <td>84</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>HU 313</td>
+                    <td>Human Rights</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Electives Subjects (6 hours)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Hours</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HU 121</td>
+                    <td>Fundamentals of Economics</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HU 213</td>
+                    <td>English-3</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HU 323</td>
+                    <td>Fundamentals of Accounting</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Faculty Requirements</h3>
+        <h4>Compulsory Subjects (63 hours)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Hours</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MA 111</td>
+                    <td>Mathematics-1</td>
+                    <td>3</td>
+                    <td>70</td>
+                    <td>C+</td>
+                </tr>
+                <tr>
+                    <td>MA 112</td>
+                    <td>Discrete Mathematics</td>
+                    <td>3</td>
+                    <td>74</td>
+                    <td>C+</td>
+                </tr>
+                <tr>
+                    <td>CS.213</td>
+                    <td>Programming-2</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Electives Subjects (9 hours)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Hours</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ST 122</td>
+                    <td>Probability and Statistics-2</td>
+                    <td>3</td>
+                    <td>94</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>HU 122</td>
+                    <td>Fundamentals of Management</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15 321</td>
+                    <td>Projects Management</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
